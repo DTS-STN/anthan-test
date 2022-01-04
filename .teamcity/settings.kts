@@ -28,8 +28,8 @@ project {
 }
 
 object Dev_NextTemplate_HttpsGithubComDtsStnnextTemplate : GitVcsRoot({
-    name = "https://github.com/DTS-STN/next-template"
-    url = "git@github.com:DTS-STN/next-template.git"
+    name = "https://github.com/DTS-STN/anthan-test"
+    url = "git@github.com:DTS-STN/anthan-test.git"
     branch = "refs/heads/main"
     branchSpec = "+:refs/heads/main"
     authMethod = uploadedKey {
@@ -45,7 +45,7 @@ object Build: BuildType({
     name = "Build"
     description = "Continuous integration"
     params {
-        param("env.PROJECT", "next-template")
+        param("env.PROJECT", "anthan-test")
         param("env.BASE_DOMAIN","bdm-dev.dts-stn.com")
         param("env.SUBSCRIPTION", "%vault:dts-sre/azure!/decd-dev-subscription-id%")
         param("env.K8S_CLUSTER_NAME", "ESdCDPSBDMK8SDev-K8S")
